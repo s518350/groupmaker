@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="Simple BootStrap example project that randomizes students to help create groups">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Groupmaker</title>
+  <title>AmyWhiteGroupmaker</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="groupmaker.css" rel="stylesheet" type="text/css"></link>
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Groupmaker</a>
+        <a class="navbar-brand" href="#">AmyWhiteGroupmaker</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse"> </div>
     </div>
@@ -40,10 +40,16 @@
   <div class="container-fluid" id="maincontent">
     <!-- row of columns; could add more-->
     <div class="row ">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-12">
+          <div class="jumbotron">
+              <h1 class="display-4">Group Maker</h1>
+              <p class="lead">Order students randomly so they can be subdivided into groups.</p>
+            </div>
+      </div>
         <!-- .col-*-* should always add up to 12 for each row.-->
-        <h2>Order students randomly so they can be subdivided into groups</h2> <br> <br>
         <!-- returning false keeps it from refreshing and losing the results-->
+        <div class="col-md-4"></div>
+        <div class="col-sm-12 col-md-4">
         <form id="mainform" onsubmit="return false;">
           Number of students (between 1 and 300):
           <input type="number" name="numstudents" min="1" max="300" value="30">
@@ -54,8 +60,9 @@
         <!-- http://v4-alpha.getbootstrap.com/components/buttons/ -->
         <!-- get ideas from http://www.javascript-coder.com/javascript-form/javascript-calculator-script.phtml-->
       </div>
+      <div class="col-sm-12 col-md-4"></div>
       <!--end column 1-->
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-12">
         <div id="results"></div>
       </div>
       <!--end column 2-->

@@ -25,11 +25,24 @@ body {
 #results{
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10%;
   background-color: ghostwhite;
   /* Hide the results column by default */
   display: none;
+  text-align: center;
 }
 
+.display-4{
+  text-align: center;
+}
 
+.lead{
+  text-align: center;
+}
 
+#mainform{
+  text-align: center;
+}
+
+.jumbotron{
+  background-color: #f5f5f5;
+}
